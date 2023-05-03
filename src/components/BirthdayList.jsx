@@ -6,19 +6,21 @@ function BirthdayList() {
   const [persons, updatePerson] = useState(data)
 
   return (
-    <section className="container">
-      <h3> {persons.length} Birthdays Today</h3>
+    <main>
+      <section className="container">
+        <h3> {persons.length} Birthdays Today</h3>
 
-      <List persons={persons} />
+        <List persons={persons} />
 
-      <button
-        type="button"
-        className="btn btn-block"
-        onClick={() => updatePerson([])}
-      >
-        Clear All
-      </button>
-    </section>
+        <button
+          type="button"
+          className="btn btn-block"
+          onClick={() => updatePerson([])}
+        >
+          Clear All
+        </button>
+      </section>
+    </main>
   )
 }
 export default BirthdayList
