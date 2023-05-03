@@ -2,10 +2,6 @@
 
 [Birthday Buddy](https://www.figma.com/file/e2vsLe9DMnXZIygNHkwGL1/Birthday-buddy?node-id=0%3A1&t=AGNWdO5QQGOoNCfD-1)
 
-## Steps
-
-- don't worry about CSS, checkout example image
-
 #### Import Data
 
 In App.jsx, import the data (from data.js) to be rendered as an array of objects. Each object should represent a person and contain properties such as name, age, and image URL.
@@ -28,12 +24,4 @@ Create a Person component to render the information for each person. This compon
 
 In App.jsx, add a button to clear the list, and set up the functionality by defining a function that resets the state variable to an empty array.
 
-Overall, the flow of the application should look something like this:
 
-- Import the data you want to render in App.jsx.
-- Set up the data as a state variable using useState.
-- Use the map method to iterate over the data array and render a Person component for each person.
-- Each Person component should render an image with a style prop to control the width, the person's name, and the person's age.
-- Create a List component that holds the rendered items.
-- Create a button with functionality to clear the list.
-- Display the number of items in the list using the length property of the state variable. This can be rendered using plain text or added to a message or heading element.
